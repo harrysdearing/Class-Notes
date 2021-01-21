@@ -4,7 +4,7 @@
 //MY CODE
 let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-for (letter in alphabet){
+for (letter in alphabet) {
     console.log(alphabet[letter]);
 }
 
@@ -12,15 +12,15 @@ for (letter in alphabet){
 //would use the for of loop because it is referring to the item itself rather than the index number
 //all of these would work
 
-for (letter in alphabet){
+for (letter in alphabet) {
     console.log(alphabet[letter]);
 };
 
-for (letter of alphabet){
+for (letter of alphabet) {
     console.log(letter)
 };
 
-for (let i = 0; i < alphabet.length; i++){
+for (let i = 0; i < alphabet.length; i++) {
     console.log(alphabet[i])
 };
 
@@ -29,8 +29,8 @@ for (let i = 0; i < alphabet.length; i++){
 //If the index is even, console.log the letter.  if the index is odd, console.log 'the index is an odd number'.
 
 //MY CODE
-for (letter in alphabet){
-    if (letter % 2 == 0){
+for (letter in alphabet) {
+    if (letter % 2 == 0) {
         console.log(alphabet[letter]);
     } else {
         console.log('the index is an odd number');
@@ -39,10 +39,10 @@ for (letter in alphabet){
 
 //TEACHER CODE
 
-for (let i = 0; i < alphabet.length; i++){
-    if (i % 2 === 0){
+for (let i = 0; i < alphabet.length; i++) {
+    if (i % 2 === 0) {
         console.log(alphabet[i]);
-    }   else {
+    } else {
         console.log('the index is odd');
     }
 };
@@ -53,10 +53,11 @@ for (let i = 0; i < alphabet.length; i++){
 //Use google to search for an array method that allows you to add one or more elements to an array
 
 //MY CODE
+let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 let arr = []
 
-for (letter in alphabet){
-    if (letter % 2 == 0){
+for (letter in alphabet) {
+    if (letter % 2 == 0) {
         arr.push(alphabet[letter]);
         console.log(arr);
     } else {
@@ -68,11 +69,11 @@ for (letter in alphabet){
 
 let arr = []
 
-for (let i = 0; i < alphabet.length; i++){
-    if (i % 2 === 0){
+for (let i = 0; i < alphabet.length; i++) {
+    if (i % 2 === 0) {
         arr.push(alphabet[i]);
         console.log(arr);
-    }   else {
+    } else {
         console.log(`the index ${i} is an odd number`);
     }
-};
+}
